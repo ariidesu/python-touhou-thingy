@@ -3,6 +3,7 @@ import numpy as np
 
 from scripts.framework.math.General import *
 
+
 class Vector2:
     def __init__(self, x: float = None, y: float = None, coords: np.ndarray = None):
         if x is not None and y is not None:
@@ -53,7 +54,7 @@ class Vector2:
         return self.x() * other.x() + self.y() * other.y()
 
     def length(self) -> float:
-        return np.sqrt(np.sum(self.coords * self.coords))
+        return np.sqrt(abs(np.sum(self.coords * self.coords)))
 
     def sqr_length(self) -> float:
         return sum(self.coords * self.coords)

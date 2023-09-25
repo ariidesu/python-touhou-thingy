@@ -3,7 +3,8 @@ import pygame
 from scripts.framework.ui.SelectButton import SelectButton
 from scripts.framework.math.Vector2 import Vector2
 
-from scripts.framework.enviroment import music_module
+from scripts.framework.environment import musicModule
+
 
 class SelectButtonMatrix:
     def __init__(self, position: Vector2, input_matrix: list[list[(str, callable)]], font, defaut_color, selected_color, padding=Vector2(75, 75)):
@@ -40,7 +41,8 @@ class SelectButtonMatrix:
     @cursor.setter
     def cursor(self, value):
         self.matrix[self.cursor_pos.y()][self.cursor_pos.x()].selected = False
-        self.cursor_pos = value % Vector2(len(self.matrix[0]), len(self.matrix))
+        self.cursor_pos = value % Vector2(
+            len(self.matrix[0]), len(self.matrix))
         self.matrix[self.cursor_pos.y()][self.cursor_pos.x()].selected = True
 
     def move_cursor(self, x: int, y: int):
@@ -56,16 +58,17 @@ class SelectButtonMatrix:
             if evt.type == pygame.KEYDOWN:
                 if evt.key == pygame.K_UP:
                     self.move_cursor(0, -1)
-                    music_module.sounds[21](.05)
+                    musicModule.sounds[21](.05)
                 if evt.key == pygame.K_DOWN:
                     self.move_cursor(0, 1)
-                    music_module.sounds[21](.05)
+                    musicModule.sounds[21](.05)
                 if evt.key == pygame.K_LEFT:
                     self.move_cursor(-1, 0)
-                    music_module.sounds[21](.05)
+                    musicModule.sounds[21](.05)
                 if evt.key == pygame.K_RIGHT:
                     self.move_cursor(1, 0)
-                    music_module.sounds[21](.05)
+                    musicModule.sounds[21](.05)
                 if evt.key == pygame.K_RETURN or evt.key == pygame.K_z:
-                    music_module.sounds[15](.1)
-                    self.matrix[self.cursor_pos.y()][self.cursor_pos.x()].trigger()
+                    musicModule.sounds[15](.1)
+                    self.matrix[self.cursor_pos.y(
+                    )][self.cursor_pos.x()].trigger()

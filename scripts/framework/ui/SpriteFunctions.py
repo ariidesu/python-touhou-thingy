@@ -1,5 +1,6 @@
 import pygame
 
+
 def textButtonSprite(text: str, font: pygame.font.Font, default_color, selected_color) -> list[pygame.Surface]:
     return [
         font.render(text, True, default_color).convert_alpha(),

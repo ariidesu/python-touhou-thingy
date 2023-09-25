@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from assets.scripts.math_and_data.Vector2 import Vector2
+from scripts.framework.math.Vector2 import Vector2
 
 
 class Collider:
@@ -9,7 +9,7 @@ class Collider:
         self.position = position
         self.offset = offset
 
-    def check_collision(self, target: Collider) -> bool:
+    def hasCollided(self, target: Collider) -> bool:
         return ((target.position - self.position) * (target.position - self.position)).length() < (self.radius + target.radius) ** 2
 
     def __repr__(self):

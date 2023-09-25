@@ -8,6 +8,7 @@ from scripts.game.classes.BulletData import BulletData
 from scripts.game.classes.Enemy import Enemy
 from scripts.game.classes.Player import Player
 
+
 class AttackFunctions:
     deltaAngle = 0
 
@@ -44,12 +45,13 @@ class AttackFunctions:
         return bullets
 
     @staticmethod
-    def cone(center: Vector2, angle, numberOfBullets: int, bulletData: BulletData, speed: float, deltaAngle: int, angularSpeed=0, player: Player=None, enemy: Enemy=None):
+    def cone(center: Vector2, angle, numberOfBullets: int, bulletData: BulletData, speed: float, deltaAngle: int, angularSpeed=0, player: Player = None, enemy: Enemy = None):
         bullets = [
             Bullet(
                 bulletData,
                 center,
-                (angle if angle != "player" else numpy.rad2deg(Vector2.angle_between(enemy.position - player.position, Vector2.right())) + 90) + i * deltaAngle * 0.5,
+                (angle if angle != "player" else numpy.rad2deg(Vector2.angle_between(
+                    enemy.position - player.position, Vector2.right())) + 90) + i * deltaAngle * 0.5,
                 speed,
                 angularSpeed
             )
@@ -60,15 +62,16 @@ class AttackFunctions:
         return bullets
 
     @staticmethod
-    def wide_cone(numberOfBullets: int, numberOfCones: int, bulletData: BulletData, angle: int, speed: float, deltaAngle: int,
-                  startTime: float, delay: float, angularSpeed=0, player: Player=None, enemy: Enemy=None):
+    def wideCone(numberOfBullets: int, numberOfCones: int, bulletData: BulletData, angle: int, speed: float, deltaAngle: int,
+                 startTime: float, delay: float, angularSpeed=0, player: Player = None, enemy: Enemy = None):
         center = Vector2.zero()
 
         attacks = [
             (
                 AttackFunctions.cone,
                 round(startTime + delay * n, 3),
-                [center, angle, numberOfBullets, bulletData, speed, deltaAngle, angularSpeed, player, enemy]
+                [center, angle, numberOfBullets, bulletData,
+                    speed, deltaAngle, angularSpeed, player, enemy]
             )
             for n in range(numberOfCones)
         ]
@@ -76,15 +79,15 @@ class AttackFunctions:
         return attacks
 
     @staticmethod
-    def wide_ring(numberOfBullets: int, numberOfRings: int, bulletData: BulletData, speed: float,
-                  startTime: float, delay: float, angularSpeed: float = 0, deltaAngle: float = 0, randomCenter=False):
+    def wideRing(numberOfBullets: int, numberOfRings: int, bulletData: BulletData, speed: float,
+                 startTime: float, delay: float, angularSpeed: float = 0, deltaAngle: float = 0, randomCenter=False):
 
         attacks = [
             (
                 AttackFunctions.ring,
                 round(startTime + delay * n, 3),
-                [Vector2.zero() if not randomCenter else\
-            Vector2.one().rotate(random.randint(0, 360)) * 25, numberOfBullets, bulletData, speed, angularSpeed, n * deltaAngle]
+                [Vector2.zero() if not randomCenter else
+                 Vector2.one().rotate(random.randint(0, 360)) * 25, numberOfBullets, bulletData, speed, angularSpeed, n * deltaAngle]
             )
             for n in range(numberOfRings)
         ]
@@ -92,18 +95,16 @@ class AttackFunctions:
         return attacks
 
     @staticmethod
-    def long_random(numberOfBullets: int, randomAmount: int, bulletData: BulletData, speed: float,
-                    startTime: float, delay: float, angularSpeed: float = 0, randomCenter=False):
+    def longRandom(numberOfBullets: int, randomAmount: int, bulletData: BulletData, speed: float,
+                   startTime: float, delay: float, angularSpeed: float = 0, randomCenter=False):
         attacks = [
             (
                 AttackFunctions.random,
                 round(startTime + delay * n, 3),
-                [Vector2 if not randomCenter else\
-            Vector2.one().rotate(random.randint(0, 360)) * 25, numberOfBullets, bulletData, speed, angularSpeed]
+                [Vector2 if not randomCenter else
+                 Vector2.one().rotate(random.randint(0, 360)) * 25, numberOfBullets, bulletData, speed, angularSpeed]
             )
             for n in range(randomAmount)
         ]
 
         return attacks
-
-

@@ -1,0 +1,2935 @@
+{
+  "bgm": "Level1.wav",
+  "length": 65,
+  "enemies": [
+    {
+      "startPosition": [50, 0],
+      "trajectory": [
+        [50, 50], [50, 50], [50, 50], [-50, 150]
+      ],
+      "speed": 1,
+      "sprite": {
+        "size": [24, 19],
+        "path": ["assets", "sprites", "entities", "fairy_0.png"]
+      },
+      "collider": {
+        "radius": 15,
+        "offset": [0, 0]
+      },
+      "hp": 10,
+      "attacks": [
+        ["longRandom", 3, 30, [["assets", "sprites", "projectiles", "kunai_0.png"], 16, 16, 4, [0, 0]], 150, 1, 0.06, 0, true]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "nothing"],
+        "probabilities": [40, 30, 30]
+      },
+      "clearOnDeath": false,
+      "time": 7
+    },
+
+    {
+      "startPosition": [550, 0],
+      "trajectory": [
+        [550, 50], [550, 50], [550, 50], [650, 150]
+      ],
+      "speed": 1,
+      "sprite": {
+        "size": [24, 19],
+        "path": ["assets", "sprites", "entities", "fairy_0.png"]
+      },
+      "collider": {
+        "radius": 15,
+        "offset": [0, 0]
+      },
+      "hp": 10,
+      "attacks": [
+        ["longRandom", 3, 30, [["assets", "sprites", "projectiles", "kunai_0.png"], 16, 16, 4, [0, 0]], 150, 1, 0.06, 0, true]
+      ],
+      "drop": {
+        "list": ["points", "power_large", "nothing"],
+        "probabilities": [40, 30, 30]
+      },
+      "clearOnDeath": false,
+      "time": 7
+    },
+
+    {
+      "startPosition": [500, 0],
+      "trajectory": [
+        [500, 120], [500, 120], [500, 120], [600, 350]
+      ],
+      "speed": 1,
+      "sprite": {
+        "size": [24, 19],
+        "path": ["assets", "sprites", "entities", "fairy_0.png"]
+      },
+      "collider": {
+        "radius": 15,
+        "offset": [0, 0]
+      },
+      "hp": 10,
+      "attacks": [
+        ["longRandom", 3, 30, [["assets", "sprites", "projectiles", "kunai_0.png"], 16, 16, 4, [0, 0]], 150, 1, 0.06, 0, true]
+      ],
+      "drop": {
+        "list": ["points", "power_large", "nothing"],
+        "probabilities": [40, 30, 30]
+      },
+      "clearOnDeath": false,
+      "time": 8
+    },
+    {
+      "startPosition": [100, 0],
+      "trajectory": [
+        [100, 120], [100, 120], [100, 120], [-50, 350]
+      ],
+      "speed": 1,
+      "sprite": {
+        "size": [24, 19],
+        "path": ["assets", "sprites", "entities", "fairy_0.png"]
+      },
+      "collider": {
+        "radius": 15,
+        "offset": [0, 0]
+      },
+      "hp": 10,
+      "attacks": [
+        ["longRandom", 3, 30, [["assets", "sprites", "projectiles", "kunai_0.png"], 16, 16, 4, [0, 0]], 150, 1, 0.06, 0, true]
+      ],
+      "drop": {
+        "list": ["points", "power_large", "nothing"],
+        "probabilities": [40, 30, 30]
+      },
+      "clearOnDeath": false,
+      "time": 8
+    },
+    {
+      "startPosition": [180, 0],
+      "trajectory": [
+        [180, 200], [180, 200], [180, 200], [170,399], [160, 598], [150, 797]
+      ],
+      "speed": 1,
+      "sprite": {
+        "size": [24, 19],
+        "path": ["assets", "sprites", "entities", "fairy_0.png"]
+      },
+      "collider": {
+        "radius": 15,
+        "offset": [0, 0]
+      },
+      "hp": 10,
+      "attacks": [
+        ["longRandom", 3, 30, [["assets", "sprites", "projectiles", "kunai_0.png"], 16, 16, 4, [0, 0]], 150, 1, 0.06, 0, true]
+      ],
+      "drop": {
+        "list": ["points", "power_large", "nothing"],
+        "probabilities": [40, 30, 30]
+      },
+      "clearOnDeath": false,
+      "time": 9
+    },
+    {
+      "startPosition": [420, 0],
+      "trajectory": [
+        [420, 200], [420, 200], [420, 200], [361,391], [302, 582], [243, 773]
+      ],
+      "speed": 1,
+      "sprite": {
+        "size": [24, 19],
+        "path": ["assets", "sprites", "entities", "fairy_0.png"]
+      },
+      "collider": {
+        "radius": 15,
+        "offset": [0, 0]
+      },
+      "hp": 10,
+      "attacks": [
+        ["longRandom", 3, 30, [["assets", "sprites", "projectiles", "kunai_0.png"], 16, 16, 4, [0, 0]], 150, 1, 0.06, 0, true]
+      ],
+      "drop": {
+        "list": ["points", "power_large", "nothing"],
+        "probabilities": [40, 30, 30]
+      },
+      "clearOnDeath": false,
+      "time": 9
+    },
+
+
+
+    {
+      "startPosition": [605, 300],
+      "trajectory": [
+        [455, 300], [260, 300], [368, 85], [600,-85]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 17
+    },
+    {
+      "startPosition": [605, 300],
+      "trajectory": [
+        [455, 300], [260, 300], [368, 85], [600,-85]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 17.4
+    },
+    {
+      "startPosition": [605, 300],
+      "trajectory": [
+        [455, 300], [260, 300], [368, 85], [600,-85]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 17.8
+    },
+    {
+      "startPosition": [605, 300],
+      "trajectory": [
+        [455, 300], [260, 300], [368, 85], [600,-85]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 18.2
+    },
+    {
+      "startPosition": [605, 300],
+      "trajectory": [
+        [455, 300], [260, 300], [368, 85], [600,-85]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 18.6
+    },
+    {
+      "startPosition": [605, 300],
+      "trajectory": [
+        [455, 300], [260, 300], [368, 85], [600,-85]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 19
+    },
+    {
+      "startPosition": [605, 300],
+      "trajectory": [
+        [455, 300], [260, 300], [368, 85], [600,-85]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 19.4
+    },
+
+
+
+    {
+      "startPosition": [-113, 278],
+      "trajectory": [
+        [112, 320], [352, 270], [156, 31], [-81,-106]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 17.1
+    },
+    {
+      "startPosition": [-113, 278],
+      "trajectory": [
+        [112, 320], [352, 270], [156, 31], [-81,-106]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 17.5
+    },
+    {
+      "startPosition": [-113, 278],
+      "trajectory": [
+        [112, 320], [352, 270], [156, 31], [-81,-106]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 17.9
+    },
+    {
+      "startPosition": [-113, 278],
+      "trajectory": [
+        [112, 320], [352, 270], [156, 31], [-81,-106]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 18.3
+    },
+    {
+      "startPosition": [-113, 278],
+      "trajectory": [
+        [112, 320], [352, 270], [156, 31], [-81,-106]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 18.7
+    },
+    {
+      "startPosition": [-113, 278],
+      "trajectory": [
+        [112, 320], [352, 270], [156, 31], [-81,-106]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 19.1
+    },
+    {
+      "startPosition": [-113, 278],
+      "trajectory": [
+        [112, 320], [352, 270], [156, 31], [-81,-106]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 19.5
+    },
+
+
+
+
+
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 20.5
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 20.9
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 21.3
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 21.7
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 22.1
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 22.5
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 22.9
+    },
+
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 20.5
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 20.9
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 21.3
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 21.7
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 22.1
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 22.5
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 22.9
+    },
+
+
+
+
+
+
+    {
+      "startPosition": [650, 100],
+      "trajectory": [
+        [500, 125], [500, 125], [500, 125], [650, 400]
+      ],
+      "speed": 1,
+      "sprite": {
+        "size": [24, 19],
+        "path": ["assets", "sprites", "entities", "fairy_0.png"]
+      },
+      "collider": {
+        "radius": 15,
+        "offset": [0, 0]
+      },
+      "hp": 10,
+      "attacks": [
+        ["wideRing", 10, 10, [["assets", "sprites", "projectiles", "kunai_0.png"], 16, 16, 4, [0, 0]], 150, 1, 0.15, 0, 50, true]
+      ],
+      "drop": {
+        "list": ["points", "power_large", "nothing"],
+        "probabilities": [40, 30, 30]
+      },
+      "clearOnDeath": false,
+      "time": 25
+    },
+    {
+      "startPosition": [650, 150],
+      "trajectory": [
+        [450, 200], [450, 200], [450, 200], [344, 393], [238, 586], [132, 761]
+      ],
+      "speed": 1,
+      "sprite": {
+        "size": [24, 19],
+        "path": ["assets", "sprites", "entities", "fairy_0.png"]
+      },
+      "collider": {
+        "radius": 15,
+        "offset": [0, 0]
+      },
+      "hp": 10,
+      "attacks": [
+        ["wideRing", 10, 10, [["assets", "sprites", "projectiles", "kunai_0.png"], 16, 16, 4, [0, 0]], 150, 1, 0.15, 0, 50, true]
+      ],
+      "drop": {
+        "list": ["points", "power_large", "nothing"],
+        "probabilities": [40, 30, 30]
+      },
+      "clearOnDeath": false,
+      "time": 25.5
+    },
+    {
+      "startPosition": [664, 223],
+      "trajectory": [
+        [435, 243], [435, 243], [435, 243], [350, 400], [265, 557], [180, 714]
+      ],
+      "speed": 1,
+      "sprite": {
+        "size": [24, 19],
+        "path": ["assets", "sprites", "entities", "fairy_0.png"]
+      },
+      "collider": {
+        "radius": 15,
+        "offset": [0, 0]
+      },
+      "hp": 10,
+      "attacks": [
+        ["wideRing", 10, 10, [["assets", "sprites", "projectiles", "kunai_0.png"], 16, 16, 4, [0, 0]], 150, 1, 0.15, 0, 50, true]
+      ],
+      "drop": {
+        "list": ["points", "power_large", "nothing"],
+        "probabilities": [40, 30, 30]
+      },
+      "clearOnDeath": false,
+      "time": 26
+    },
+
+
+    {
+      "startPosition": [-50, 100],
+      "trajectory": [
+        [100, 125], [100, 125], [100, 125], [200, 300], [300, 575], [400, 850]
+      ],
+      "speed": 1,
+      "sprite": {
+        "size": [24, 19],
+        "path": ["assets", "sprites", "entities", "fairy_0.png"]
+      },
+      "collider": {
+        "radius": 15,
+        "offset": [0, 0]
+      },
+      "hp": 10,
+      "attacks": [
+        ["wideRing", 10, 10, [["assets", "sprites", "projectiles", "kunai_0.png"], 16, 16, 4, [0, 0]], 150, 1, 0.15, 0, 50, true]
+      ],
+      "drop": {
+        "list": ["points", "power_large", "nothing"],
+        "probabilities": [40, 30, 30]
+      },
+      "clearOnDeath": false,
+      "time": 25
+    },
+    {
+      "startPosition": [-50, 150],
+      "trajectory": [
+        [150, 200], [150, 200], [150, 200], [200, 400], [250, 600], [300, 800]
+      ],
+      "speed": 1,
+      "sprite": {
+        "size": [24, 19],
+        "path": ["assets", "sprites", "entities", "fairy_0.png"]
+      },
+      "collider": {
+        "radius": 15,
+        "offset": [0, 0]
+      },
+      "hp": 10,
+      "attacks": [
+        ["wideRing", 10, 10, [["assets", "sprites", "projectiles", "kunai_0.png"], 16, 16, 4, [0, 0]], 150, 1, 0.15, 0, 50, true]
+      ],
+      "drop": {
+        "list": ["points", "power_large", "nothing"],
+        "probabilities": [40, 30, 30]
+      },
+      "clearOnDeath": false,
+      "time": 25.5
+    },
+    {
+      "startPosition": [-64, 223],
+      "trajectory": [
+        [165, 243], [165, 243], [165, 243], [150, 450], [135, 657], [120, 864]
+      ],
+      "speed": 1,
+      "sprite": {
+        "size": [24, 19],
+        "path": ["assets", "sprites", "entities", "fairy_0.png"]
+      },
+      "collider": {
+        "radius": 15,
+        "offset": [0, 0]
+      },
+      "hp": 10,
+      "attacks": [
+        ["wideRing", 10, 10, [["assets", "sprites", "projectiles", "kunai_0.png"], 16, 16, 4, [0, 0]], 150, 1, 0.15, 0, 50, true]
+      ],
+      "drop": {
+        "list": ["points", "power_large", "nothing"],
+        "probabilities": [40, 30, 30]
+      },
+      "clearOnDeath": false,
+      "time": 26
+    },
+
+
+
+
+
+
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 31
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 31.4
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 31.8
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 32.2
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 32.6
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 33
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 33.4
+    },
+
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 31
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 31.4
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 31.8
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 32.2
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 32.6
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 33
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 33.4
+    },
+
+
+
+
+
+
+
+
+
+    {
+      "startPosition": [605, 300],
+      "trajectory": [
+        [455, 300], [260, 300], [368, 85], [600,-85]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 5, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 35
+    },
+    {
+      "startPosition": [605, 300],
+      "trajectory": [
+        [455, 300], [260, 300], [368, 85], [600,-85]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 5, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 35.4
+    },
+    {
+      "startPosition": [605, 300],
+      "trajectory": [
+        [455, 300], [260, 300], [368, 85], [600,-85]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 5, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 35.8
+    },
+    {
+      "startPosition": [605, 300],
+      "trajectory": [
+        [455, 300], [260, 300], [368, 85], [600,-85]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 5, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 36.2
+    },
+    {
+      "startPosition": [605, 300],
+      "trajectory": [
+        [455, 300], [260, 300], [368, 85], [600,-85]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 5, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 36.6
+    },
+    {
+      "startPosition": [605, 300],
+      "trajectory": [
+        [455, 300], [260, 300], [368, 85], [600,-85]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 5, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 37
+    },
+    {
+      "startPosition": [605, 300],
+      "trajectory": [
+        [455, 300], [260, 300], [368, 85], [600,-85]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 5, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 37.4
+    },
+
+
+
+    {
+      "startPosition": [-113, 278],
+      "trajectory": [
+        [112, 320], [352, 270], [156, 31], [-81,-106]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 5, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 35.1
+    },
+    {
+      "startPosition": [-113, 278],
+      "trajectory": [
+        [112, 320], [352, 270], [156, 31], [-81,-106]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 5, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 35.5
+    },
+    {
+      "startPosition": [-113, 278],
+      "trajectory": [
+        [112, 320], [352, 270], [156, 31], [-81,-106]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 5, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 35.9
+    },
+    {
+      "startPosition": [-113, 278],
+      "trajectory": [
+        [112, 320], [352, 270], [156, 31], [-81,-106]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 5, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 36.3
+    },
+    {
+      "startPosition": [-113, 278],
+      "trajectory": [
+        [112, 320], [352, 270], [156, 31], [-81,-106]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 36.7
+    },
+    {
+      "startPosition": [-113, 278],
+      "trajectory": [
+        [112, 320], [352, 270], [156, 31], [-81,-106]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 37.1
+    },
+    {
+      "startPosition": [-113, 278],
+      "trajectory": [
+        [112, 320], [352, 270], [156, 31], [-81,-106]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 37.5
+    },
+
+
+
+
+    {
+      "startPosition": [100, 0],
+      "trajectory": [
+        [100, 100], [100, 100], [100, 100], [100, 100], [100, 100], [100, 100], [100, 100], [100, 100], [100, 100], [100, 100], [100, 100], [100, 100], [100, -50]
+      ],
+      "speed": 1,
+      "sprite": {
+        "size": [24, 19],
+        "path": ["assets", "sprites", "entities", "fairy_0.png"]
+      },
+      "collider": {
+        "radius": 15,
+        "offset": [0, 0]
+      },
+      "hp": 25,
+      "attacks": [
+        ["wideRing", 3, 60, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 4, [0, 0]], 200 , 1, 0.2, 0, 13, false],
+        ["wideRing", 3, 60, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 4, [0, 0]], 250 , 1.1, 0.2, 0, 13, false],
+        ["wideRing", 3, 60, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 4, [0, 0]], 300 , 1.2, 0.2, 0, 13, false]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "nothing"],
+        "probabilities": [40, 30, 30]
+      },
+      "clearOnDeath": true,
+      "time": 40
+    },
+
+    {
+      "startPosition": [500, 0],
+      "trajectory": [
+        [500, 100], [500, 100], [500, 100], [500, 100], [500, 100], [500, 100], [500, 100], [500, 100], [500, 100], [500, 100], [500, 100], [500, 100], [500, -50]
+      ],
+      "speed": 1,
+      "sprite": {
+        "size": [24, 19],
+        "path": ["assets", "sprites", "entities", "fairy_0.png"]
+      },
+      "collider": {
+        "radius": 15,
+        "offset": [0, 0]
+      },
+      "hp": 25,
+      "attacks": [
+        ["wideRing", 3, 60, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 4, [0, 0]], 200, 1, 0.2, 0, -13, false],
+        ["wideRing", 3, 60, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 4, [0, 0]], 250, 1.1, 0.2, 0, -13, false],
+        ["wideRing", 3, 60, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 4, [0, 0]], 300, 1.2, 0.2, 0, -13, false]
+      ],
+      "drop": {
+        "list": ["points", "power_large", "nothing"],
+        "probabilities": [40, 30, 30]
+      },
+      "clearOnDeath": true,
+      "time": 40
+    },
+
+    {
+      "startPosition": [650, 125],
+      "trajectory": [
+        [475, 125], [475, 125], [475, 125], [475, 125], [475, 125], [475, 125], [475, 125], [475, 125], [475, 125], [475, 125], [475, 125], [475, 125], [475, 125]
+      ],
+      "speed": 1,
+      "sprite": {
+        "size": [24, 19],
+        "path": ["assets", "sprites", "entities", "fairy_0.png"]
+      },
+      "collider": {
+        "radius": 15,
+        "offset": [0, 0]
+      },
+      "hp": 40,
+      "attacks": [
+        ["wideRing", 3, 60, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 4, [0, 0]], 200, 1, 0.2, 0, 13, false],
+        ["wideRing", 3, 60, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 4, [0, 0]], 250, 1.1, 0.2, 0, 13, false],
+        ["wideRing", 3, 60, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 4, [0, 0]], 300, 1.2, 0.2, 0, 13, false]
+      ],
+      "drop": {
+        "list": ["points", "power_large", "nothing"],
+        "probabilities": [40, 30, 30]
+      },
+      "clearOnDeath": true,
+      "time": 40.3
+    },
+
+    {
+      "startPosition": [-50, 125],
+      "trajectory": [
+        [125, 125], [125, 125], [125, 125], [125, 125], [125, 125], [125, 125], [125, 125], [125, 125], [125, 125], [125, 125], [125, 125], [125, 125], [125, 125]
+      ],
+      "speed": 1,
+      "sprite": {
+        "size": [24, 19],
+        "path": ["assets", "sprites", "entities", "fairy_0.png"]
+      },
+      "collider": {
+        "radius": 15,
+        "offset": [0, 0]
+      },
+      "hp": 40,
+      "attacks": [
+        ["wideRing", 3, 60, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 4, [0, 0]], 200, 1, 0.2, 0, -13, false],
+        ["wideRing", 3, 60, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 4, [0, 0]], 250, 1.1, 0.2, 0, -13, false],
+        ["wideRing", 3, 60, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 4, [0, 0]], 300, 1.2, 0.2, 0, -13, false]
+      ],
+      "drop": {
+        "list": ["points", "power_large", "nothing"],
+        "probabilities": [40, 30, 30]
+      },
+      "clearOnDeath": true,
+      "time": 40.3
+    },
+
+
+
+
+
+
+
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 44.5
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 44.9
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 45.3
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 45.7
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 46.1
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 46.5
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 46.9
+    },
+
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 44.5
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 44.9
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 45.3
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 45.7
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 46.1
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 46.5
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 46.9
+    },
+
+
+
+
+
+    {
+      "startPosition": [605, 300],
+      "trajectory": [
+        [455, 300], [260, 300], [368, 85], [600,-85]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 50
+    },
+    {
+      "startPosition": [605, 300],
+      "trajectory": [
+        [455, 300], [260, 300], [368, 85], [600,-85]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 50.4
+    },
+    {
+      "startPosition": [605, 300],
+      "trajectory": [
+        [455, 300], [260, 300], [368, 85], [600,-85]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 50.8
+    },
+    {
+      "startPosition": [605, 300],
+      "trajectory": [
+        [455, 300], [260, 300], [368, 85], [600,-85]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 51.2
+    },
+    {
+      "startPosition": [605, 300],
+      "trajectory": [
+        [455, 300], [260, 300], [368, 85], [600,-85]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 51.6
+    },
+    {
+      "startPosition": [605, 300],
+      "trajectory": [
+        [455, 300], [260, 300], [368, 85], [600,-85]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 52
+    },
+    {
+      "startPosition": [605, 300],
+      "trajectory": [
+        [455, 300], [260, 300], [368, 85], [600,-85]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 52.4
+    },
+
+
+
+    {
+      "startPosition": [-113, 278],
+      "trajectory": [
+        [112, 320], [352, 270], [156, 31], [-81,-106]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 50.1
+    },
+    {
+      "startPosition": [-113, 278],
+      "trajectory": [
+        [112, 320], [352, 270], [156, 31], [-81,-106]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 50.5
+    },
+    {
+      "startPosition": [-113, 278],
+      "trajectory": [
+        [112, 320], [352, 270], [156, 31], [-81,-106]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 50.9
+    },
+    {
+      "startPosition": [-113, 278],
+      "trajectory": [
+        [112, 320], [352, 270], [156, 31], [-81,-106]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 51.3
+    },
+    {
+      "startPosition": [-113, 278],
+      "trajectory": [
+        [112, 320], [352, 270], [156, 31], [-81,-106]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 51.7
+    },
+    {
+      "startPosition": [-113, 278],
+      "trajectory": [
+        [112, 320], [352, 270], [156, 31], [-81,-106]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 52.1
+    },
+    {
+      "startPosition": [-113, 278],
+      "trajectory": [
+        [112, 320], [352, 270], [156, 31], [-81,-106]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 3, 4, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 10, 1, 0.75, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 52.5
+    },
+
+
+
+
+
+
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 54.5
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 54.9
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 55.3
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 55.7
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 56.1
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 56.5
+    },
+    {
+      "startPosition": [633, 264],
+      "trajectory": [
+        [460, 20], [300, 231], [200, 140], [300,30], [500, 250], [720, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 56.9
+    },
+
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 54.5
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 54.9
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 55.3
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 55.7
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 56.1
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 56.5
+    },
+    {
+      "startPosition": [-33, 264],
+      "trajectory": [
+        [140, 20], [300, 231], [400, 140], [300,30], [100, 250], [-120, 460]
+      ],
+      "speed": 2.4,
+      "sprite": {
+        "size": [32, 32],
+        "path": ["assets", "sprites", "entities", "spiky_ball.png"]
+      },
+      "collider": {
+        "radius": 16,
+        "offset": [0, 0]
+      },
+      "hp": 1,
+      "attacks": [
+        ["wideCone", 5, 9, [["assets", "sprites", "projectiles", "ellipse_bullet_0.png"], 24, 24, 6, [0, 0]], "player",  150, 15, 1, 0.5, 0]
+      ],
+      "drop": {
+        "list": ["points", "power_small", "power_large"],
+        "probabilities": [50, 35, 15]
+      },
+      "clearOnDeath": false,
+      "time": 56.9
+    }
+  ]
+}

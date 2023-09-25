@@ -4,8 +4,8 @@ characters = {
     0: {
         "name": "Marisa",
         "speed": marisa_speed,
-        "sprite-sheet": marisa_spritesheet,
-        "bullet-sprite-sheet": marisa_bulletSpritesheet,
+        "spritesheet": marisa_spritesheet,
+        "bullet-spritesheet": marisa_bulletSpritesheet,
         "attack-function": marisa_attack
     },
 }

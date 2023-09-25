@@ -1,24 +1,22 @@
 import pygame
 from pygame.locals import *
 
-from scripts.framework.enviroment import *
-from scripts.framework.ui.SceneHandler import *
-from scripts.game.scenes.TitleScene import TitleScene
+from scripts.framework.environment import *
+from scripts.framework.ui.SceneHandler import SceneHandler
 
-def init():
-    pygame.init()
-
-    pygame.mixer.pre_init(48000, -16, 2, 4096)
-    pygame.mixer.init()
 
 def run():
+    pygame.display.set_caption("touhou python gamin (by cutymeo / shiinazzz)")
     screen = pygame.display.set_mode(SIZE, DOUBLEBUF, 16)
     clock = pygame.time.Clock()
+    sceneHandler = SceneHandler(screen, clock)
 
-    currentScene = TitleScene()
+    from scripts.game.scenes.TitleScene import TitleScene
+
+    sceneHandler.setScene(TitleScene())
     deltaTime = 1 / FPS
 
-    while currentScene is not None:
-        updateScene(screen, clock, deltaTime)
+    while sceneHandler.getScene() is not None:
+        sceneHandler.update(deltaTime)
         pygame.display.flip()
         deltaTime = clock.tick(FPS) / 1000

@@ -1,13 +1,25 @@
 import pygame
 
-from scripts.framework.enviroment import *
+from scripts.framework.environment import *
+from scripts.framework.ui.Scene import Scene
 
-currentScene = None
 
-def updateScene(screen: pygame.display, clock: pygame.time.Clock, deltaTime: float):
-    if currentScene is not None:
-        currentScene.processInput(pygame.event.get())
-        currentScene.update(deltaTime)
-        currentScene.render(screen, clock)
+class SceneHandler:
+    def __init__(self, screen: pygame.display, clock: pygame.time.Clock):
+        self.currentScene = None
+        self.screen = screen
+        self.clock = clock
 
-        currentScene = currentScene.next
+    def getScene(self) -> Scene:
+        return self.currentScene
+
+    def setScene(self, scene: Scene):
+        self.currentScene = scene
+
+    def update(self, deltaTime: float):
+        if self.currentScene is not None:
+            self.currentScene.processInput(pygame.event.get())
+            self.currentScene.update(deltaTime)
+            self.currentScene.render(self.screen, self.clock)
+
+            self.currentScene = self.currentScene.next

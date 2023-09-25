@@ -2,6 +2,7 @@ import pygame
 
 from scripts.framework.math.Vector2 import Vector2
 
+
 class Effect:
     def __init__(self, position: Vector2, spritesheet: [pygame.Surface, ...], delay: float):
         self.position: Vector2 = position
@@ -12,8 +13,8 @@ class Effect:
 
         self.delay = delay
 
-    def update(self, delta_time) -> bool:
-        self.sprite_timer += delta_time * 60 * 2
+    def update(self, deltaTime) -> bool:
+        self.sprite_timer += deltaTime * 60 * 2
         if self.sprite_timer >= self.delay:
             self.currentSprite += 1
 
@@ -24,7 +25,7 @@ class Effect:
 
         return True
 
-    def get_sprite(self) -> pygame.sprite.Sprite:
+    def getSprite(self) -> pygame.sprite.Sprite:
         sprite = pygame.sprite.Sprite()
 
         sprite.image = self.spritesheet[self.currentSprite]
