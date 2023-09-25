@@ -1,0 +1,27 @@
+{
+    "bgm": "",
+    "length": 155,
+    "enemies": [
+        {
+            "startPosition": [50, 0],
+            "trajectory": [
+              [50, 50], [50, 50], [50, 50], [-50, 150]
+            ],
+            "speed": 2,
+            "collider": {
+              "radius": 15,
+              "offset": [0, 0]
+            },
+            "hp": 10,
+            "attacks": [
+              ["longRandom", 3, 30, [["assets", "sprites", "projectiles", "kunai_0.png"], 16, 16, 4, [0, 0]], 150, 1, 0.06, 0, true]
+            ],
+            "drop": {
+              "list": ["points", "power_small", "nothing"],
+              "probabilities": [40, 30, 30]
+            },
+            "clearOnDeath": false,
+            "time": 7
+        }
+    ]
+}
