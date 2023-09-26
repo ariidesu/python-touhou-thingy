@@ -48,7 +48,7 @@ class TitleScene(Scene):
                 pygame.quit()
 
     def switchToGame(self):
-        self.switchToScene(GameScene("yuyuko"))
+        self.switchToScene(GameScene("example"))
 
     def quit(self):
         musicModule.sounds[0](.1)
