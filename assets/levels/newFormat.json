@@ -1,0 +1,69 @@
+{
+    "presets": {
+        "enemyName": {
+            "sprite": {
+                "size": [0, 0],
+                "spritePath": ["assets", "sprites", "entities", "fairy_0.png"],
+                "spriteFile": "fairy_0.png"
+            },
+            "collider": {
+                "radius": 15,
+                "offset": [0, 0]
+            }
+        }
+    },
+    "stage": {
+        "bgm": "",
+        "length": 0
+    },
+    "timeline": {
+        "1": {
+            "action": "spawn",
+            "enemy": "enemyName",
+            "hp": 5,
+            "position": [0, 0],
+            "speed": 1,
+            "trajectory": [],
+            "attacks": [
+                {
+                    "type": "wideRing",
+                    "bullets": 0,
+                    "rings": 0,
+                    "speed": 0,
+                    "angleIncremental": 0,
+                    "angularSpeed": 0,
+                    "startTime": 0,
+                    "delay": 0,
+                    "randomCenter": false
+                },
+                {
+                    "type": "longRandom",
+                    "bullets": 0,
+                    "randomAmount": 0,
+                    "speed": 0,
+                    "angularSpeed": 0,
+                    "startTime": 0,
+                    "delay": 0,
+                    "randomCenter": false
+                },
+                {
+                    "type": "wideCone",
+                    "bullets": 0,
+                    "cones": 0,
+                    "speed": 0,
+                    "angle": 0,
+                    "angleIncremental": 0,
+                    "angularSpeed": 0,
+                    "startTime": 0,
+                    "delay": 0,
+                    "randomCenter": false
+                }
+            ],
+            "drop": {
+                "list": ["points", "power_small", "nothing"],
+                "probabilities": [40, 30, 30]
+            },
+            "clearOnDeath": false
+        }
+    }
+}
