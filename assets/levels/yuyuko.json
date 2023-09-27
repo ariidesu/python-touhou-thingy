@@ -1,27 +1,62 @@
 {
-    "bgm": "Level1.wav",
-    "length": 155,
-    "enemies": [
-        {
-            "startPosition": [50, 0],
-            "trajectory": [
-              [50, 50], [50, 50], [50, 50], [-50, 150]
-            ],
-            "speed": 2,
-            "collider": {
+  "presets": {
+      "fairy": {
+          "sprite": {
+              "size": [24, 19],
+              "spritePath": ["assets", "sprites", "entities", "fairy_0.png"],
+              "spriteFile": "fairy_0.png"
+          },
+          "collider": {
               "radius": 15,
               "offset": [0, 0]
-            },
-            "hp": 10,
-            "attacks": [
-              ["longRandom", 3, 30, [["assets", "sprites", "projectiles", "kunai_0.png"], 16, 16, 4, [0, 0]], 150, 1, 0.06, 0, true]
-            ],
-            "drop": {
+          }
+      }
+  },
+  "stage": {
+      "bgm": "YuyukoTheme_BorderOfLife.wav",
+      "background": "background.png",
+      "length": 10
+  },
+  "timeline": {
+      "3": {
+          "action": "spawn",
+          "enemy": "fairy",
+          "hp": 5,
+          "position": [0, 0],
+          "speed": 1,
+          "trajectory": [[12, 24], [35, 61]],
+          "attacks": [
+              {
+                  "type": "wideRing",
+                  "bulletType": "kunai",
+                  "bullets": 12,
+                  "rings": 2,
+                  "speed": 1.2,
+                  "angleIncremental": 0.2,
+                  "angularSpeed": 1,
+                  "startTime": 0,
+                  "delay": 0,
+                  "randomCenter": false
+              },
+              {
+                  "type": "wideCone",
+                  "bulletType": "kunai",
+                  "bullets": 12,
+                  "cones": 3,
+                  "speed": 1,
+                  "angle": 60,
+                  "angleIncremental": 0,
+                  "angularSpeed": 0,
+                  "startTime": 2,
+                  "delay": 0,
+                  "randomCenter": false
+              }
+          ],
+          "drop": {
               "list": ["points", "power_small", "nothing"],
               "probabilities": [40, 30, 30]
-            },
-            "clearOnDeath": false,
-            "time": 7
-        }
-    ]
+          },
+          "clearOnDeath": false
+      }
+  }
 }

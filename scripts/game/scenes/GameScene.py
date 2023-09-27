@@ -14,6 +14,7 @@ from scripts.game.classes.BulletData import BulletData
 from scripts.game.classes.Enemy import Enemy
 from scripts.game.classes.Item import *
 from scripts.game.classes.Player import Player
+from scripts.game.classes.TimelineRunner import TimelineRunner
 
 
 class GameScene(Scene):
@@ -24,13 +25,14 @@ class GameScene(Scene):
         
         self.level = json.load(
             open(path_join("assets", "levels", f"{level}.json")))
-        self.levelEnemies = sorted(
-            self.level["enemies"], key=lambda enemy: enemy["time"])
+        self.levelEnemies = [1,2,3] 
+        """sorted(
+            self.level["enemies"], key=lambda enemy: enemy["time"])"""
 
-        musicModule.playMusic(self.level["bgm"])
+        musicModule.playMusic(self.level["stage"]["bgm"])
 
         self.background = Image.open(path_join(
-            "assets", "sprites", "backgrounds", "background.png")).convert("RGBA")
+            "assets", "sprites", "backgrounds", self.level["stage"]["background"])).convert("RGBA")
         self.background.paste(Image.new("RGBA", (GAME_ZONE[2], GAME_ZONE[3]), (255, 255, 255, 0)),
                               (GAME_ZONE[0], GAME_ZONE[1]))
         self.bg = pygame.sprite.Sprite()
@@ -42,8 +44,9 @@ class GameScene(Scene):
             path_join("assets", "fonts", "DFPPOPCorn-W12.ttf"), 36)
 
         self.player = Player(0, self, 4)
+        self.timelineRunner = TimelineRunner(self, self.player, self.level)
 
-        self.enemyBullets = []
+        self.enemyBullets = self.timelineRunner.bulletsPool
         self.items = []
         self.bulletCleaner = None
 
@@ -58,7 +61,7 @@ class GameScene(Scene):
         self.time = 0
         self.enemyCount = 0
 
-        self.enemies = []
+        self.enemies = self.timelineRunner.enemies
 
     def processInput(self, events):
         for evt in events:
@@ -90,102 +93,11 @@ class GameScene(Scene):
         self.deltaTime = deltaTime
         self.time += deltaTime
 
-        if self.time >= self.level["length"]:
+        if self.time >= self.level["stage"]["length"]:
             self.player.switchToTitle()
 
         if self.levelEnemies and self.enemyCount < len(self.levelEnemies):
-            if self.time >= self.levelEnemies[self.enemyCount]["time"]:
-                enemyData = self.levelEnemies[self.enemyCount]
-                enemy = Enemy(
-                    position=Vector2(
-                        GAME_ZONE[0], GAME_ZONE[1]) + Vector2(*enemyData["startPosition"]),
-                    trajectory=list(
-                        map(numpy.array, [enemyData["startPosition"]] + enemyData["trajectory"])),
-                    speed=enemyData["speed"],
-                    spritesheet=SpriteSheet(
-                        path_join(*enemyData["sprite"]["path"])).crop(enemyData["sprite"]["size"]),
-                    collider=Collider(enemyData["collider"]["radius"], offset=Vector2(
-                        *enemyData["collider"]["offset"])),
-                    hp=enemyData["hp"],
-                    attackData=[(*attack[:3], (path_join(*attack[3][0]), attack[3][1], attack[3][2], attack[3]
-                                 [3], Vector2(*attack[3][4])), *attack[4:]) for attack in enemyData["attacks"]],
-                    drop=(enemyData["drop"]["list"],
-                          enemyData["drop"]["list"]),
-                    clearBulletsOnDeath=enemyData["clearOnDeath"],
-                    bulletPool=self.enemyBullets,
-                    scene=self
-                )
-
-                attackData = []
-                for i in range(len(enemy.attackData)):
-                    if enemy.attackData[i][0] == "wideRing":
-                        _, bul_num, ring_num, bul_data, spd, s_time, delay, a_speed, d_angle, rand_cnt = \
-                            enemy.attackData[i]
-                        attackData.extend(
-                            AttackFunctions.wideRing
-                            (
-                                numberOfBullets=bul_num,
-                                numberOfRings=ring_num,
-                                bulletData=BulletData(
-                                    SpriteSheet(bul_data[0]).crop(
-                                        (bul_data[1], bul_data[2])),
-                                    Collider(bul_data[3], bul_data[4])
-                                ),
-                                speed=spd,
-                                startTime=s_time,
-                                delay=delay,
-                                angularSpeed=a_speed,
-                                deltaAngle=d_angle,
-                                randomCenter=rand_cnt
-                            )
-                        )
-                    elif enemy.attackData[i][0] == "longRandom":
-                        _, bul_num, rand_num, bul_data, spd, s_time, delay, a_speed, rand_cnt = \
-                            enemy.attackData[i]
-                        attackData.extend(
-                            AttackFunctions.longRandom
-                            (
-                                numberOfBullets=bul_num,
-                                randomAmount=rand_num,
-                                bulletData=BulletData(
-                                    SpriteSheet(bul_data[0]).crop(
-                                        (bul_data[1], bul_data[2])),
-                                    Collider(bul_data[3], bul_data[4])
-                                ),
-                                speed=spd,
-                                startTime=s_time,
-                                delay=delay,
-                                angularSpeed=a_speed,
-                                randomCenter=rand_cnt
-                            )
-                        )
-                    elif enemy.attackData[i][0] == "wideCone":
-                        _, bul_num, cone_num, bul_data, angle, spd, d_angle, s_time, delay, a_speed = enemy.attackData[
-                            i]
-                        attackData.extend(
-                            AttackFunctions.wideCone(
-                                numberOfBullets=bul_num,
-                                numberOfCones=cone_num,
-                                bulletData=BulletData(
-                                    SpriteSheet(bul_data[0]).crop(
-                                        (bul_data[1], bul_data[2])),
-                                    Collider(bul_data[3], bul_data[4])
-                                ),
-                                angle=angle,
-                                speed=spd,
-                                deltaAngle=d_angle,
-                                startTime=s_time,
-                                delay=delay,
-                                angularSpeed=a_speed,
-                                player=self.player,
-                                enemy=enemy
-                            )
-                        )
-
-                enemy.attackData = sorted(attackData, key=lambda x: x[1])
-
-                self.enemies.append(enemy)
-                self.enemyCount += 1
+            self.timelineRunner.onTime(self.time)
 
         for enemy in self.enemies:
             enemy.update()
@@ -257,6 +169,7 @@ class GameScene(Scene):
         self.entityGroup.add(player_sprite)
 
         for enemy in self.enemies:
+            print(enemy, enemy.spritesheet)
             self.entityGroup.add(enemy.getSprite())
 
         self.entityGroup.draw(screen)

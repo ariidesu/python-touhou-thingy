@@ -14,6 +14,7 @@
     },
     "stage": {
         "bgm": "",
+        "background": "",
         "length": 0
     },
     "timeline": {
@@ -27,6 +28,7 @@
             "attacks": [
                 {
                     "type": "wideRing",
+                    "bulletType": "kunai",
                     "bullets": 0,
                     "rings": 0,
                     "speed": 0,
@@ -38,6 +40,7 @@
                 },
                 {
                     "type": "longRandom",
+                    "bulletType": "kunai",
                     "bullets": 0,
                     "randomAmount": 0,
                     "speed": 0,
@@ -48,6 +51,7 @@
                 },
                 {
                     "type": "wideCone",
+                    "bulletType": "kunai",
                     "bullets": 0,
                     "cones": 0,
                     "speed": 0,
