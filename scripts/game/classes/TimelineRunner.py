@@ -34,7 +34,6 @@ class TimelineRunner:
                 
                 currentTimelineData = self.levelData["timeline"][i]
                 if currentTimelineData["action"] == "spawn":
-                    print("spawn at", i)
                     usingEnemyData = None
                     if self.levelData["presets"] and currentTimelineData["enemy"] in self.levelData["presets"]:
                         usingEnemyData = self.levelData["presets"][currentTimelineData["enemy"]]

@@ -1,62 +1,89 @@
 {
-  "presets": {
-      "fairy": {
-          "sprite": {
-              "size": [24, 19],
-              "spritePath": ["assets", "sprites", "entities", "fairy_0.png"],
-              "spriteFile": "fairy_0.png"
-          },
-          "collider": {
-              "radius": 15,
-              "offset": [0, 0]
-          }
-      }
-  },
-  "stage": {
-      "bgm": "YuyukoTheme_BorderOfLife.wav",
-      "background": "background.png",
-      "length": 10
-  },
-  "timeline": {
-      "3": {
-          "action": "spawn",
-          "enemy": "fairy",
-          "hp": 5,
-          "position": [0, 0],
-          "speed": 1,
-          "trajectory": [[12, 24], [35, 61]],
-          "attacks": [
-              {
-                  "type": "wideRing",
-                  "bulletType": "kunai",
-                  "bullets": 12,
-                  "rings": 2,
-                  "speed": 1.2,
-                  "angleIncremental": 0.2,
-                  "angularSpeed": 1,
-                  "startTime": 0,
-                  "delay": 0,
-                  "randomCenter": false
-              },
-              {
-                  "type": "wideCone",
-                  "bulletType": "kunai",
-                  "bullets": 12,
-                  "cones": 3,
-                  "speed": 1,
-                  "angle": 60,
-                  "angleIncremental": 0,
-                  "angularSpeed": 0,
-                  "startTime": 2,
-                  "delay": 0,
-                  "randomCenter": false
-              }
-          ],
-          "drop": {
-              "list": ["points", "power_small", "nothing"],
-              "probabilities": [40, 30, 30]
-          },
-          "clearOnDeath": false
-      }
-  }
+	"presets": {
+		"fairy": {
+			"sprite": {
+				"size": [24, 19],
+				"spriteFile": "fairy_0.png"
+			},
+			"collider": {
+				"radius": 15,
+				"offset": [0, 0]
+			}
+		}
+	},
+	"stage": {
+		"bgm": "YuyukoTheme_BorderOfLife.wav",
+		"background": "background.png",
+		"length": 15
+	},
+	"timeline": {
+		"3": {
+			"action": "spawn",
+			"enemy": "fairy",
+			"hp": 20,
+			"position": [300, 10],
+			"speed": 1,
+			"trajectory": [
+				[300, 55],
+				[300, 55],
+				[300, 80],
+				[300, 85],
+				[300, 150],
+				[300, 150],
+				[300, 150],
+				[300, 150]
+			],
+			"attacks": [
+				{
+					"type": "wideRing",
+					"bulletType": "kunai",
+					"bullets": 35,
+					"rings": 10,
+					"speed": 48,
+					"angleIncremental": 2,
+					"angularSpeed": 0,
+					"startTime": 0,
+					"delay": 0.6,
+					"randomCenter": false
+				},
+				{
+					"type": "wideCone",
+					"bulletType": "kunai",
+					"bullets": 30,
+					"cones": 4,
+					"speed": 36,
+					"angle": 180,
+					"angleIncremental": 3,
+					"angularSpeed": 0,
+					"startTime": 3,
+					"delay": 0,
+					"randomCenter": false
+				},
+				{
+                    "type": "longRandom",
+                    "bulletType": "kunai",
+                    "bullets": 30,
+                    "randomAmount": 12,
+                    "speed": 40,
+                    "angularSpeed": 4,
+                    "startTime": 5,
+                    "delay": 0.4,
+                    "randomCenter": false
+                }
+			],
+			"drop": {
+				"list": [
+					"points",
+					"power_small",
+					"nothing"
+				],
+				"probabilities": [
+					40,
+					30,
+					30
+				]
+			},
+			"clearOnDeath": false
+		}
+	}
 }

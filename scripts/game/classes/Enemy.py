@@ -36,8 +36,8 @@ class Enemy(Entity):
         self.trajectory = trajectory
         self.t = 0
 
-        self.max_hp: int = hp
-        self.current_hp: int = self.max_hp
+        self.maxHp: int = hp
+        self.hp: int = self.maxHp
 
         self.attackData: [(callable, float), ...] = attackData
         self.attack_count = 0
@@ -113,12 +113,12 @@ class Enemy(Entity):
 
     def getDamage(self, damage: int) -> None:
         musicModule.sounds[2](.2)
-        self.current_hp -= damage
-        if self.current_hp <= 0:
+        self.hp -= damage
+        if self.hp <= 0:
             self.death()
 
     def death(self):
-        if self.current_hp <= 0:
+        if self.hp <= 0:
             musicModule.sounds[23](.15)
 
             if self.clearBulletsOnDeath:

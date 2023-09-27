@@ -101,7 +101,7 @@ class AttackFunctions:
             (
                 AttackFunctions.random,
                 round(startTime + delay * n, 3),
-                [Vector2 if not randomCenter else
+                [Vector2.zero() if not randomCenter else
                  Vector2.one().rotate(random.randint(0, 360)) * 25, numberOfBullets, bulletData, speed, angularSpeed]
             )
             for n in range(randomAmount)
