@@ -169,7 +169,6 @@ class GameScene(Scene):
         self.entityGroup.add(player_sprite)
 
         for enemy in self.enemies:
-            print(enemy, enemy.spritesheet)
             self.entityGroup.add(enemy.getSprite())
 
         self.entityGroup.draw(screen)

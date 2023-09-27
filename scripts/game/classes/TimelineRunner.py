@@ -43,7 +43,7 @@ class TimelineRunner:
 
                     if usingEnemyData is not None:
                         spritePath = path_join(*usingEnemyData["sprite"]["path"]) if "path" in usingEnemyData["sprite"] else path_join("assets", "sprites", "entities", usingEnemyData["sprite"]["spriteFile"])
-                        enemySprite = SpriteSheet(spritePath).crop(usingEnemyData["sprite"]["size"]),
+                        enemySprite = SpriteSheet(spritePath).crop(usingEnemyData["sprite"]["size"])
                         enemyHp = currentTimelineData["hp"] or 5
                         enemyPosition = gameZoneVector + Vector2(*currentTimelineData["position"])
                         enemySpeed = currentTimelineData["speed"]
